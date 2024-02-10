@@ -1,0 +1,201 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightblue;
+    align-items: center;
+}
+
+.header-ico{
+    width: 50px;
+    cursor: pointer;
+}
+
+.header-buttons{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.calcInputs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.functionInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.resultPage{
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.46);
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    width: 0;
+}
+.rootResult{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.deltaResult{
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.deltaResultInput{
+    text-align: center;
+}
+
+.rootResultInput{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.xResult{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rootSection{
+    width: 80%;
+
+}
+
+.functionInputs input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.calcInputs p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.calcInputs input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+
+.calcOpr{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.calcOpr button{
+    width: 50px;
+    height: 50px; 
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.upArrowBtn{
+    margin-bottom: 3px;
+}
+
+.operationButton{
+    background-color: lightblue;
+    color: white;
+    border: none;
+}
+.operationButton:hover{
+    background-color: rgb(215, 244, 253);
+    color: gray;
+}
+.clearButton{
+    background-color: lightcoral;
+    color: white;
+    border: none;
+}
+
+.selectedOpr{
+    background-color: rgb(136, 196, 214);
+    border: 2px solid lightblue;
+    transition: .5s;
+}
+
+.clearButton:hover{
+    background-color: rgb(255, 189, 189);
+}
+
+.resultButton{
+    background-color: lightgray;
+    color: black;
+    border: none;
+}
+.functionCalc{
+    width: 175px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+}
+
+.inputRow, .btnRow{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+.btnRow{
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    justify-content: flex-end;
+}
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+@keyframes showResult {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+}

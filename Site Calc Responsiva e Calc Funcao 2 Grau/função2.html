@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptFun.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header-ico" src="img/1176238.png" alt="home" title="home">
+        <div>
+            <button class="header-buttons">Função do 2 grau</button>
+            <a href="index.html">
+                <button class="header-buttons">Calculadora Responsiva</button>
+            </a>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <form class="functionPage main">
+        <h1>Calculadora Função de 2 Grau</h1>
+        <div class="functionInputs">
+            <div class="inputRow">
+                <p>A</p><input id="numA" type="text">
+            </div>
+            <div class="inputRow">
+                <p>B</p><input id="numB" type="text">
+            </div>
+            <div class="inputRow">
+                <p>C</p><input id="numC" type="text">
+            </div>
+            <div class="btnRow">
+                <button id="calcBtn"class="functionCalc">Calcular</button>
+            </div>
+        </div>
+    </form>
+    <div id="resultPage" class="resultPageMain hidden">
+        <div class="resultPage">
+            <div class="rootSection">
+                <h1>Resultado</h1>
+                <div class="rootResult">
+                    <div class="rootResultInput">
+                        <p>x1</p>
+                        <p id="x1Result" class="xResult">Não Existe</p>
+                    </div>
+                    <div class="rootResultInput">
+                        <p>x2</p>
+                        <p id="x2Result"class="xResult">Não Existe</p>
+                    </div>
+                </div>
+                <div class="deltaResult">
+                    <div class="deltaResultInput">
+                        <p>Delta</p>
+                        <p id="deltaResult" class="xResult">Não Existe</p>
+                    </div>
+            </div>
+        </div>
+    </div>

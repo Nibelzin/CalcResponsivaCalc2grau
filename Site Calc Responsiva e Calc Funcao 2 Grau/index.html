@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptCal.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img class="header-ico" src="img/1176238.png" alt="home" title="home">
+        <div>
+            <a href="função2.html">
+                <button class="header-buttons">Função do 2 grau</button>
+            </a>
+            <button class="header-buttons">Calculadora Responsiva</button>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <form id="CalcPage" class="main">
+        <div action="" id="calcObj">
+            <div class="calcInputs">
+                <input id="calcFirstInput" autocomplete="off" type="number" placeholder="Digite o primeiro número">
+                <p id="calcOperation">+</p>
+                <input id="calcSecondInput" autocomplete="off" type="number" placeholder="Digite o segundo número">
+                <p>=</p>
+                <input id="calcResultInput" type="text" placeholder="Resultado" disabled>
+            </div>
+            <div class="calcOpr">
+                <div class="calcBtns">
+                    <div class="upArrowBtn">
+                        <button type="button" id="plusBtn" class="operationButton selectedOpr">+</button>
+                    </div>
+                    <button type="button" id="timesBtn" class="operationButton">×</button>
+                    <button type="button" id="minusBtn" class="operationButton">-</button>
+                    <button type="button" id="divisionBtn" class="operationButton">÷</button>
+                </div>
+                <div class="resultBtns">
+                    <button type="button" id="clearBtn" class="clearButton">C</button>
+                    <button type="submit" id="resultBtn" class="resultButton">=</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
